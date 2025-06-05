@@ -1,0 +1,22 @@
+public class InfoDisplay {
+
+    void show(int number) {
+        System.out.println("Integer: " + number);
+    }
+
+    void show(String text) {
+        System.out.println("String: " + text);
+    }
+
+    void show(String text, int number) {
+        System.out.println("String: " + text + ", Integer: " + number);
+    }
+
+    public static void main(String[] args) {
+        InfoDisplay obj = new InfoDisplay();
+
+        obj.show(100);                   // Displays an integer
+        obj.show("Hello Java");          // Displays a string
+        obj.show("Age", 25);             // Displays a string and an integer
+    }
+}
